@@ -1,0 +1,431 @@
+{
+	"info": {
+		"_postman_id": "bcd0c58d-1bcc-48c7-8bf9-b2d86e91155b",
+		"name": "calc_lab12",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30353186",
+		"_collection_link": "https://www.postman.com/dimati12/workspace/lab12/collection/30353186-bcd0c58d-1bcc-48c7-8bf9-b2d86e91155b?action=share&source=collection_link&creator=30353186"
+	},
+	"item": [
+		{
+			"name": "Сложение",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"= 2\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dimati2143.pythonanywhere.com/default/1+1",
+					"protocol": "https",
+					"host": [
+						"dimati2143",
+						"pythonanywhere",
+						"com"
+					],
+					"path": [
+						"default",
+						"1+1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Вычитание",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"= 0\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dimati2143.pythonanywhere.com/default/1-1",
+					"protocol": "https",
+					"host": [
+						"dimati2143",
+						"pythonanywhere",
+						"com"
+					],
+					"path": [
+						"default",
+						"1-1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Умножение",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"= 6\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dimati2143.pythonanywhere.com/default/2*3",
+					"protocol": "https",
+					"host": [
+						"dimati2143",
+						"pythonanywhere",
+						"com"
+					],
+					"path": [
+						"default",
+						"2*3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Деление",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"= 3\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dimati2143.pythonanywhere.com/default/9:3",
+					"protocol": "https",
+					"host": [
+						"dimati2143",
+						"pythonanywhere",
+						"com"
+					],
+					"path": [
+						"default",
+						"9:3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Квадратный корень",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"= 2\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dimati2143.pythonanywhere.com/default/sqrt4",
+					"protocol": "https",
+					"host": [
+						"dimati2143",
+						"pythonanywhere",
+						"com"
+					],
+					"path": [
+						"default",
+						"sqrt4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Степень",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"= 8\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dimati2143.pythonanywhere.com/default/2**3",
+					"protocol": "https",
+					"host": [
+						"dimati2143",
+						"pythonanywhere",
+						"com"
+					],
+					"path": [
+						"default",
+						"2**3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Синус",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"= 0.841\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dimati2143.pythonanywhere.com/trig/sin1",
+					"protocol": "https",
+					"host": [
+						"dimati2143",
+						"pythonanywhere",
+						"com"
+					],
+					"path": [
+						"trig",
+						"sin1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Косинус",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"= 0.540\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dimati2143.pythonanywhere.com/trig/cos1",
+					"protocol": "https",
+					"host": [
+						"dimati2143",
+						"pythonanywhere",
+						"com"
+					],
+					"path": [
+						"trig",
+						"cos1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Тангенс",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"= 1.557\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dimati2143.pythonanywhere.com/trig/tg1",
+					"protocol": "https",
+					"host": [
+						"dimati2143",
+						"pythonanywhere",
+						"com"
+					],
+					"path": [
+						"trig",
+						"tg1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Котангенс",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"= 0.373\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dimati2143.pythonanywhere.com/trig/ctg1",
+					"protocol": "https",
+					"host": [
+						"dimati2143",
+						"pythonanywhere",
+						"com"
+					],
+					"path": [
+						"trig",
+						"ctg1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Арксинус",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"= 1.570\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dimati2143.pythonanywhere.com/trig/asin1",
+					"protocol": "https",
+					"host": [
+						"dimati2143",
+						"pythonanywhere",
+						"com"
+					],
+					"path": [
+						"trig",
+						"asin1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Арккосинус",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"= 0.0\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dimati2143.pythonanywhere.com/trig/acos1",
+					"protocol": "https",
+					"host": [
+						"dimati2143",
+						"pythonanywhere",
+						"com"
+					],
+					"path": [
+						"trig",
+						"acos1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
